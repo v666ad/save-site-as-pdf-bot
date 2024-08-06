@@ -17,7 +17,7 @@ func main() {
 	}
 	log.Println("загружена конфигурация", config.Name)
 
-	bot, err := tgbotapi.NewBotAPI(config.TelegramApiToken) // "7301570305:AAF47O-AtTFC39yu9C5XXxsUqM74xRvXgDE"
+	bot, err := tgbotapi.NewBotAPI(config.TelegramApiToken)
 	if err != nil {
 		log.Panic(err)
 	}
